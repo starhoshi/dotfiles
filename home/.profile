@@ -38,11 +38,6 @@ alias stopmysql='sudo /opt/local/share/mysql5/mysql/mysql.server stop'
 #alias titanium='/Users/hoshikawakensuke/Library/Application\ Support/Titanium/mobilesdk/osx/2.1.4.GA/titanium.py'
 alias tiadblog='/Applications/android-sdk-macosx/platform-tools/./adb -d logcat | grep -G "\(TiAPI\)\|\(TiApp\)"'
 
-#サーバログイン
-alias nishimura='ssh hoshikawa@www.waseda-nishimura.jp'
-alias root_yuyushiki='ssh -p 22 root@133.242.202.58'
-alias yuyushiki='ssh -p 10022 -i ~/.ssh/id_rsa.133.242.202.58 kensuke@133.242.202.58'
-
 ### Added by the Heroku Toolbelt
 #export PATH="/usr/local/heroku/bin:$PATH"
 
