@@ -1,15 +1,15 @@
 # http://stackoverflow.com/questions/17628545/java-home-and-efxclipse-on-os-x
 # http://ryugoo.hateblo.jp/entry/2013/11/03/020935
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home
 
 # MacPorts Installer addition on 2012-07-22_at_22:48:58: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$JAVA_HOME/bin:$HOME/.rbenv/bin:$PATH
+#export PATH=/opt/local/bin:/opt/local/sbin:$JAVA_HOME/bin:$HOME/.rbenv/bin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 # MacPortsのやつ、いらないかも
-PATH=/opt/local/bin:/opt/local/sbin:$PATH 
-MANPATH=/opt/local/man:$MANPATH 
-DISPLAY=:0.0
+#PATH=/opt/local/bin:/opt/local/sbin:$PATH 
+#MANPATH=/opt/local/man:$MANPATH 
+#DISPLAY=:0.0
 
 # lsの色付け
 #export CLICOLOR=1
@@ -44,9 +44,9 @@ alias root_yuyushiki='ssh -p 22 root@133.242.202.58'
 alias yuyushiki='ssh -p 10022 -i ~/.ssh/id_rsa.133.242.202.58 kensuke@133.242.202.58'
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+#export PATH="/usr/local/heroku/bin:$PATH"
 
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 # swift インタプリタ
 PATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:$PATH
