@@ -1,0 +1,19 @@
+[user]
+	name = Kensuke Hoshikawa
+	email = kensuke1751@gmail.com
+[core]
+	excludesfile = /Users/hoshikawakensuke/.gitignore
+	editor = /usr/bin/vim
+[color]
+	ui = true
+[alias]
+	co = checkout
+	st = status
+	br = branch
+	ci = commit
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
