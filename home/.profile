@@ -46,4 +46,10 @@ alias tiadblog='/Applications/android-sdk-macosx/platform-tools/./adb -d logcat 
 # swift インタプリタ
 PATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:$PATH
 
+# brew search token
 export HOMEBREW_GITHUB_API_TOKEN=$(cat $HOME/.github-token)
+
+# MacVim
+export EDITOR=/opt/homebrew-cask/Caskroom/macvim-kaoriya/7.4.383-20140805/MacVim.app/Contents/MacOS/Vim
+alias vi='env LANG=ja_JP.UTF-8 /opt/homebrew-cask/Caskroom/macvim-kaoriya/7.4.383-20140805/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='env LANG=ja_JP.UTF-8 /opt/homebrew-cask/Caskroom/macvim-kaoriya/7.4.383-20140805/MacVim.app/Contents/MacOS/Vim "$@"'
