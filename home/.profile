@@ -46,3 +46,4 @@ alias tiadblog='/Applications/android-sdk-macosx/platform-tools/./adb -d logcat 
 # swift インタプリタ
 PATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:$PATH
 
+export HOMEBREW_GITHUB_API_TOKEN=$(cat $HOME/.github-token)
