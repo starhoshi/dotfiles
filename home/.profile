@@ -53,3 +53,4 @@ export HOMEBREW_GITHUB_API_TOKEN=$(cat $HOME/.github-token)
 export EDITOR=/opt/homebrew-cask/Caskroom/macvim-kaoriya/7.4.383-20140805/MacVim.app/Contents/MacOS/Vim
 alias vi='env LANG=ja_JP.UTF-8 /opt/homebrew-cask/Caskroom/macvim-kaoriya/7.4.383-20140805/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /opt/homebrew-cask/Caskroom/macvim-kaoriya/7.4.383-20140805/MacVim.app/Contents/MacOS/Vim "$@"'
+

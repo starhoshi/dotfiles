@@ -22,6 +22,9 @@ NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 "NeoBundle 'https://bitbucket.org/kovisoft/slimv'
 
+NeoBundle 'kana/vim-fakeclip.git'
+set clipboard=unnamed
+
 filetype plugin indent on     " required!
 filetype indent on
 syntax on
@@ -51,7 +54,17 @@ NeoBundle 'git://github.com/yomi322/unite-tweetvim.git'
 " NeoBundle 'https://github.com/tyru/open-browser.vim'
 NeoBundle 'https://github.com/basyura/twibill.vim'
 
-set enc=utf-8
+" Vim powerline使おう系のやつ http://qiita.com/alpaca_taichou/items/ab70f914a6a577e25d70
+NeoBundle 'alpaca-tc/alpaca_powertabline'
+NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
+NeoBundle 'Lokaltog/powerline-fontpatcher'
+" Powerlineの設定
+"let g:Powerline_symbols = 'fancy'
+" 文字化けするならこっち使う
+let g:Powerline_symbols = 'compatible'
+
+"set enc=utf-8
+set encoding=utf-8
 set fenc=utf-8
 set number
 set expandtab
@@ -69,8 +82,14 @@ set showmatch
 "set fileencodings=ucs-bom,iso-2022-jp-3,iso-2022-jp,eucjp-ms,euc-jisx0213,euc-jp,sjis,cp932,utf-8
 set shiftwidth=2
 set colorcolumn=80
+"set ambiwidth=double
+
+" ;でコマンド入力( ;と:を入れ替)
+noremap ; :
 
 "open-browser.vim http://vim-users.jp/2011/08/hack225/
 let g:netrw_nogx = 1 " disable netrw's gx mapping.
 nmap gx <Plug>(openbrowser-smart-search)
 vmap gx <Plug>(openbrowser-smart-search)
+
+
