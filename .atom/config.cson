@@ -1,0 +1,46 @@
+"*":
+  "atom-beautify":
+    _analyticsUserId: "07014688-17ba-4df0-8344-f33f34fe792e"
+  autosave:
+    enabled: true
+  core:
+    disabledPackages: [
+      "minimap"
+      "japanese-wrap"
+      "linter-jshint"
+      "activate-power-mode"
+      "terminal-plus"
+    ]
+    packagesWithKeymapsDisabled: []
+    themes: [
+      "dark-flat-ui"
+      "monokai"
+    ]
+  editor:
+    fontFamily: "Ricty for powerline"
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "ee351051-e81c-bb28-42df-63ae1993917e"
+  "highlight-line": {}
+  "japanese-wrap":
+    characterWidth: {}
+  jshint:
+    supportLintingJsx: true
+    validateOnlyOnSave: true
+  linter: {}
+  "linter-jshint": {}
+  minimap: {}
+  "one-dark-ui": {}
+  react: {}
+  "rubocop-auto-correct":
+    autoRun: true
+    correctFile: true
+  "status-bar": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "vim-mode":
+    useClipboardAsDefaultRegister: true
+  welcome:
+    showOnStartup: false
