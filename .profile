@@ -50,7 +50,33 @@ PATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolch
 export HOMEBREW_GITHUB_API_TOKEN=$(cat $HOME/.github-token)
 
 # MacVim
-export EDITOR=/opt/homebrew-cask/Caskroom/macvim-kaoriya/7.4.383-20140805/MacVim.app/Contents/MacOS/Vim
-alias vi='env LANG=ja_JP.UTF-8 /opt/homebrew-cask/Caskroom/macvim-kaoriya/7.4.383-20140805/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vim='env LANG=ja_JP.UTF-8 /opt/homebrew-cask/Caskroom/macvim-kaoriya/7.4.383-20140805/MacVim.app/Contents/MacOS/Vim "$@"'
+export EDITOR=/Users/kensuke/Applications/MacVim.app/Contents/MacOS/Vim
+alias vi='env LANG=ja_JP.UTF-8 /Users/kensuke/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='env LANG=ja_JP.UTF-8 /Users/kensuke/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 
+# brew_name
+alias brew_name="$(brew --repository)/Library/Taps/caskroom/homebrew-cask/developer/bin/generate_cask_token"
+
+# nodebrew
+# PATH=$PATH:/Users/kensuke/.nodebrew/current/bin
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# git completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
+export GOPATH=~/.go
+eval "$(rbenv init -)"
+export CC=/usr/bin/gcc
+
+# hub
+eval "$(hub alias -s)"
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/kensuke/google-cloud-sdk/path.bash.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/kensuke/google-cloud-sdk/completion.bash.inc'
+
+# direnv
+eval "$(direnv hook bash)"

@@ -1,8 +1,8 @@
 [user]
-	name = Kensuke Hoshikawa
+	name = star__hoshi
 	email = kensuke1751@gmail.com
 [core]
-	excludesfile = /Users/hoshikawakensuke/.gitignore
+	excludesfile = /Users/kensuke/.gitignore_global
 	editor = /usr/bin/vim
 [color]
 	ui = true
@@ -11,11 +11,14 @@
 	st = status
 	br = branch
 	ci = commit
+	poh = push origin HEAD
+	gittree = git log --graph --all --format=\"%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s\"
+	tree = log --graph --all --format=\"%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s\"
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.1/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [filter "media"]
 	clean = git media clean %f
@@ -27,3 +30,7 @@
 [tig "bind"]
   generic = g move-first-line
   generic = G move-last-line
+[log]
+	decorate = short
+[commit]
+	template = /Users/kensuke/.gitmessage.txt
