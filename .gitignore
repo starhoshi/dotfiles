@@ -1,10 +1,10 @@
 # atom
 .apm
 .node-gyp
-blob-store
-compile-cache
-packages
-storage
+blob-store/*
+compile-cache/*
+packages/*
+storage/*
 dev
 .npm
 
