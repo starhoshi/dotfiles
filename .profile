@@ -49,11 +49,6 @@ PATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolch
 # brew search token
 export HOMEBREW_GITHUB_API_TOKEN=$(cat $HOME/.github-token)
 
-# MacVim
-export EDITOR=/Users/kensuke/Applications/MacVim.app/Contents/MacOS/Vim
-alias vi='env LANG=ja_JP.UTF-8 /Users/kensuke/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vim='env LANG=ja_JP.UTF-8 /Users/kensuke/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-
 # brew_name
 alias brew_name="$(brew --repository)/Library/Taps/caskroom/homebrew-cask/developer/bin/generate_cask_token"
 
@@ -80,3 +75,4 @@ source '/Users/kensuke/google-cloud-sdk/completion.bash.inc'
 
 # direnv
 eval "$(direnv hook bash)"
+

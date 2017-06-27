@@ -9,15 +9,14 @@
       "japanese-wrap"
       "linter-jshint"
       "activate-power-mode"
-      "terminal-plus"
     ]
     packagesWithKeymapsDisabled: []
+    telemetryConsent: "no"
     themes: [
       "dark-flat-ui"
       "monokai"
     ]
   editor:
-    fontFamily: "Ricty for powerline"
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true

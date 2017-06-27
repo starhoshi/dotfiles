@@ -34,3 +34,6 @@
 	decorate = short
 [commit]
 	template = /Users/kensuke/.gitmessage.txt
+[merge "mergepbx"]
+  name = XCode project files merger
+  driver = /usr/local/bin/mergepbx %O %A %B
