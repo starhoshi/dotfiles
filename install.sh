@@ -10,8 +10,13 @@ do
   [[ "$f" == ".DS_Store" ]] && continue
 
   echo "$f"
+  rm ~/$f
   ln -sf $DIR/$f ~/$f
 done
+
+mkdir .config
+rm -rf ~/.config/karabiner
+ln -sf "$DIR/karabiner" ~/.config/karabiner
 
 chsh -s "$(which zsh)"
 
