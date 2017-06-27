@@ -13,3 +13,5 @@ do
   ln -sf $DIR/$f ~/$f
 done
 
+chsh -s "$(which zsh)"
+
