@@ -10,7 +10,7 @@ Makefile
 # bin
 *.swp
 !.gitkeep
-.idea/
+#.idea/
 
 
 # Xcode (from gitignore.io)
