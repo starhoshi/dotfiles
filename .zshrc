@@ -86,3 +86,7 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(direnv hook zsh)"
 
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh)"
+
