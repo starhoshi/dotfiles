@@ -15,8 +15,6 @@ do
 done
 
 mkdir .config
-rm -rf ~/.config/karabiner
-ln -sf "$DIR/karabiner" ~/.config/karabiner
 
 chsh -s "$(which zsh)"
 
