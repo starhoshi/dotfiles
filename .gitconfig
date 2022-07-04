@@ -9,9 +9,8 @@
 [alias]
   co = checkout
   st = status
-  br = branch
+  br = branch --sort=-authordate
   ci = commit
-  poh = push origin HEAD
   gittree = git log --graph --all --format=\"%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s\"
   tree = log --graph --all --format=\"%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s\"
 [difftool "sourcetree"]
@@ -36,4 +35,3 @@
 [merge "mergepbx"]
   name = XCode project files merger
   driver = /usr/local/bin/mergepbx %O %A %B
-
