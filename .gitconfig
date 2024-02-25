@@ -3,7 +3,6 @@
   email = kensuke1751@gmail.com
 [core]
   excludesfile = /Users/kensuke/.gitignore_global
-  editor = /usr/bin/vim
 [color]
   ui = true
 [alias]
@@ -31,7 +30,6 @@
 [log]
   decorate = short
 [commit]
-  template = /Users/kensuke/.gitmessage.txt
 [merge "mergepbx"]
   name = XCode project files merger
   driver = /usr/local/bin/mergepbx %O %A %B
